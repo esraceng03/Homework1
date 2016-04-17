@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="POHONE CONTACT RECOVERY" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+
+        android:gravity="center">
+
+
+        <RadioButton
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AVEA"
+            android:textSize="12sp"
+            android:onClick="onRadioButton"
+
+            android:id="@+id/s1"
+            />
+        <RadioButton
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TURKCELL"
+            android:textSize="12sp"
+            android:onClick="onRadioButton"
+            android:id="@+id/s2"
+            />
+        <RadioButton
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VODOFONE"
+            android:textSize="12dp"
+            android:onClick="onRadioButton"
+            android:id="@+id/s3"
+
+            />
+        <RadioButton
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:textSize="12sp"
+            android:onClick="onRadioButton"
+            android:id="@+id/s4"
+            />
+
+    </RadioGroup>
+
+
+
+</LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="300dp">
+    <ImageView android:id="@+id/img_contact"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:contentDescription="Contacts Image"
+        />
+  </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recovery"
+            android:text="Recovery"
+
+            android:onClick="Recovery"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backup"
+            android:text="Back-Up"
+
+            android:onClick="Backup"/>
+    </LinearLayout>
+
+
+
+</TableLayout>
